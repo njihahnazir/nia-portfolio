@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nia Ahmad | Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600&display=swap');
+        
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        
+        h1, h2, h3 {
+            font-family: 'Playfair Display', serif;
+        }
+        
+        .hero-bg {
+            background-image: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.5)), url('https://picsum.photos/id/1015/2000/1200');
+            background-size: cover;
+            background-position: center;
+        }
+        
+        .nav-link {
+            position: relative;
+            transition: all 0.3s;
+        }
+        
+        .nav-link:after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -4px;
+            left: 0;
+            background-color: #d4b89e;
+            transition: width 0.4s ease;
+        }
+        
+        .nav-link:hover:after { width: 100%; }
+        
+        .photo-card {
+            transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        .photo-card:hover {
+            transform: scale(1.06) translateY(-12px);
+            box-shadow: 0 30px 60px -15px rgb(0 0 0 / 0.3);
+        }
+    </style>
+</head>
+<body class="bg-[#f8f5f0] text-gray-800 overflow-x-hidden">
+    <!-- HEADER / HERO -->
+    <header class="hero-bg h-screen flex items-center relative">
+        <nav class="absolute top-0 w-full px-8 py-6 flex justify-between items-center z-50">
+            <div class="text-2xl font-light tracking-widest text-white">NIA AHMAD</div>
+            
+            <div class="flex gap-8 text-sm uppercase tracking-widest text-white">
+                <a href="#about" class="nav-link cursor-pointer">About</a>
+                <a href="#education" class="nav-link cursor-pointer">Education</a>
+                <a href="#projects" class="nav-link cursor-pointer">Projects</a>
+                <a href="#gallery" class="nav-link cursor-pointer">Gallery</a>
+                <a href="#business" class="nav-link cursor-pointer">Business</a>
+                <a href="#travel" class="nav-link cursor-pointer">Travel</a>
+            </div>
+        </nav>
+        
+        <div class="max-w-5xl mx-auto px-6 text-white relative z-10">
+            <div class="max-w-xl">
+                <h1 class="text-6xl md:text-7xl font-light tracking-wider">NIA AHMAD</h1>
+                <p class="mt-4 text-2xl md:text-3xl font-light">Photographer • Creator • Dreamer</p>
+                
+                <div class="mt-12">
+                    <a href="#about" 
+                       class="inline-block border-2 border-white px-10 py-4 text-sm tracking-widest hover:bg-white hover:text-gray-900 transition-all duration-300">
+                        DISCOVER MY JOURNEY
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="absolute bottom-12 right-12 text-right">
+            <p class="text-sm uppercase tracking-widest opacity-75">Scroll to explore</p>
+            <i class="fa-solid fa-chevron-down text-2xl animate-bounce mt-2"></i>
+        </div>
+    </header>
+
+    <!-- ABOUT -->
+    <section id="about" class="py-24 px-8 max-w-6xl mx-auto">
+        <div class="grid md:grid-cols-2 gap-16 items-center">
+            <div>
+                <h2 class="text-5xl font-light mb-6">Hello, I'm Nia</h2>
+                <p class="text-lg leading-relaxed text-gray-600">
+                    A passionate student, photographer, and entrepreneur who believes every moment is worth capturing. 
+                    I thrive on challenges and turn experiences into beautiful stories through my lens and creativity.
+                </p>
+                
+                <div class="mt-10 grid grid-cols-2 gap-8">
+                    <div class="space-y-6">
+                        <div class="flex gap-4">
+                            <i class="fa-solid fa-camera text-4xl text-[#c5a47e] mt-1"></i>
+                            <div>
+                                <h4 class="font-medium">Photography Enthusiast</h4>
+                                <p class="text-gray-600 text-sm">Buying my own camera and building memories through it.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="space-y-6">
+                        <div class="flex gap-4">
+                            <i class="fa-solid fa-store text-4xl text-[#c5a47e] mt-1"></i>
+                            <div>
+                                <h4 class="font-medium">Young Entrepreneur</h4>
+                                <p class="text-gray-600 text-sm">Running a Thai-style sambal belacan business in Melaka while studying.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="relative">
+                <img src="https://picsum.photos/id/64/700/850" 
+                     alt="Nia Ahmad Portrait" 
+                     class="rounded-3xl shadow-2xl w-full object-cover">
+                <div class="absolute -bottom-8 -left-8 bg-white p-8 rounded-3xl shadow-xl max-w-xs">
+                    <p class="italic">"Life is a collection of moments. I just capture them beautifully."</p>
+                    <p class="text-xs mt-6 text-right text-gray-500">- Nia Ahmad</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section id="education" class="bg-white py-24">
+        <div class="max-w-5xl mx-auto px-8">
+            <h2 class="text-5xl font-light mb-16 text-center">My Educational Journey</h2>
+            
+            <div class="max-w-3xl mx-auto space-y-20">
+                <div class="flex gap-10">
+                    <div class="w-40 text-right flex-shrink-0">
+                        <span class="block text-sm text-gray-500">SMKA Naim Lilbanat</span>
+                    </div>
+                    <div class="flex-1 border-l-2 border-[#d4b89e] pl-10">
+                        <h3 class="text-2xl">Outstanding Student</h3>
+                        <ul class="mt-6 space-y-4 text-gray-600">
+                            <li>● Achieved 10A in PT3</li>
+                            <li>● Actively involved in marching & sports until the Sultan of Kelantan's Birthday Ceremony</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="flex gap-10">
+                    <div class="w-40 text-right flex-shrink-0">
+                        <span class="block text-sm text-gray-500">STPM</span>
+                    </div>
+                    <div class="flex-1 border-l-2 border-[#d4b89e] pl-10">
+                        <h3 class="text-2xl">CGPA 3.42</h3>
+                        <p class="mt-4 text-gray-600">
+                            Successfully completed STPM with a pointer of 3.42 (almost 3.5) in a very challenging era. 
+                            This journey taught me resilience and discipline.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="py-24 px-8 max-w-6xl mx-auto">
+        <h2 class="text-5xl font-light mb-16 text-center">Featured Projects</h2>
+        
+        <div class="grid md:grid-cols-2 gap-12">
+            <div class="group">
+                <div class="bg-white rounded-3xl overflow-hidden shadow-xl">
+                    <img src="https://picsum.photos/id/1015/800/520" class="w-full h-72 object-cover group-hover:scale-105 transition-transform duration-500">
+                    <div class="p-9">
+                        <h3 class="text-3xl font-light">Camera Rental Hub</h3>
+                        <p class="text-gray-600 mt-3">A clean and user-friendly platform for renting professional cameras.</p>
+                        <a href="#" class="mt-6 inline-flex items-center gap-3 text-sm tracking-widest border-b pb-1">Visit Website →</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="group">
+                <div class="bg-white rounded-3xl overflow-hidden shadow-xl">
+                    <img src="https://picsum.photos/id/201/800/520" class="w-full h-72 object-cover group-hover:scale-105 transition-transform duration-500">
+                    <div class="p-9">
+                        <h3 class="text-3xl font-light">Clinic Appointment Management System</h3>
+                        <p class="text-emerald-700 font-medium mt-1">Grade: A- (Dr. Elle)</p>
+                        <p class="text-gray-600 mt-4">A challenging full-stack system developed during Workshop I. Dr. Elle is known for being strict, so this A- means a lot.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- GALLERY -->
+    <section id="gallery" class="py-24 bg-[#f8f5f0]">
+        <div class="max-w-7xl mx-auto px-8">
+            <h2 class="text-5xl font-light mb-4 text-center">Photography Gallery</h2>
+            <p class="text-center text-gray-500 mb-12">All captured with cameras I bought with my own money</p>
+            
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+                <img src="https://picsum.photos/id/1015/600/600" class="photo-card rounded-3xl cursor-pointer" onclick="enlarge(this)">
+                <img src="https://picsum.photos/id/133/600/600" class="photo-card rounded-3xl cursor-pointer" onclick="enlarge(this)">
+                <img src="https://picsum.photos/id/201/600/600" class="photo-card rounded-3xl cursor-pointer" onclick="enlarge(this)">
+                <img src="https://picsum.photos/id/251/600/600" class="photo-card rounded-3xl cursor-pointer" onclick="enlarge(this)">
+                <img src="https://picsum.photos/id/301/600/600" class="photo-card rounded-3xl cursor-pointer" onclick="enlarge(this)">
+                <img src="https://picsum.photos/id/366/600/600" class="photo-card rounded-3xl cursor-pointer" onclick="enlarge(this)">
+                <img src="https://picsum.photos/id/431/600/600" class="photo-card rounded-3xl cursor-pointer" onclick="enlarge(this)">
+                <img src="https://picsum.photos/id/1016/600/600" class="photo-card rounded-3xl cursor-pointer" onclick="enlarge(this)">
+            </div>
+        </div>
+    </section>
+
+    <!-- BUSINESS -->
+    <section id="business" class="py-24 px-8 max-w-6xl mx-auto bg-white">
+        <div class="grid md:grid-cols-12 gap-16 items-center">
+            <div class="md:col-span-5">
+                <img src="https://picsum.photos/id/669/700/700" class="rounded-3xl shadow-2xl" alt="Sambal Belacan">
+            </div>
+            <div class="md:col-span-7">
+                <h2 class="text-5xl font-light">Thai-Style Sambal Belacan</h2>
+                <p class="mt-6 text-lg text-gray-600">
+                    While pursuing my studies, I run a small business selling authentic Thai-style sambal belacan in Melaka. 
+                    The response has been amazing with consistent positive feedback.
+                </p>
+                
+                <a href="https://wa.me/60123456789" target="_blank"
+                   class="mt-10 inline-flex items-center gap-4 bg-[#c5a47e] text-white px-8 py-5 rounded-2xl hover:bg-[#b8966a] transition-all text-lg font-light">
+                    <i class="fa-brands fa-whatsapp text-3xl"></i>
+                    <div>
+                        <span class="block text-sm">Want to try it?</span>
+                        <span class="font-medium">Order via WhatsApp</span>
+                    </div>
+                </a>
+                <p class="text-sm text-gray-500 mt-4">Fast reply • Freshly made • Melaka</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- TRAVEL -->
+    <section id="travel" class="py-24 px-8 bg-[#f8f5f0]">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-5xl font-light mb-8">Wanderlust Soul</h2>
+            <p class="text-xl leading-relaxed text-gray-600">
+                I love travelling. My father once took me across the Balkans. 
+                Those experiences opened my eyes to the beauty of different cultures and landscapes. 
+                Every journey becomes a story I tell through my photographs.
+            </p>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-gray-900 text-white py-20">
+        <div class="max-w-5xl mx-auto px-8 text-center">
+            <p class="text-3xl font-light tracking-widest">NIA AHMAD</p>
+            <p class="text-gray-400 mt-6 max-w-md mx-auto">
+                Thank you for visiting my portfolio. Let's create beautiful memories together.
+            </p>
+            <div class="flex justify-center gap-10 text-3xl mt-12">
+                <a href="#" class="hover:text-[#d4b89e]"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" class="hover:text-[#d4b89e]"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+            <p class="text-xs text-gray-500 mt-16">© 2026 Nia Ahmad • HCI Portfolio Assignment</p>
+        </div>
+    </footer>
+
+    <script>
+        function enlarge(img) {
+            const modal = document.createElement('div');
+            modal.style.cssText = 'position:fixed; inset:0; background:rgba(0,0,0,0.95); display:flex; align-items:center; justify-content:center; z-index:1000;';
+            modal.innerHTML = `
+                <img src="${img.src}" style="max-height:92vh; max-width:92vw; border-radius:20px;">
+                <button onclick="this.parentElement.remove()" style="position:absolute; top:30px; right:30px; color:white; font-size:50px; line-height:1;">×</button>
+            `;
+            document.body.appendChild(modal);
+        }
+
+        // Smooth scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                target.scrollIntoView({ behavior: 'smooth' });
+            });
+        });
+    </script>
+</body>
+</html>
